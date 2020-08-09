@@ -1,0 +1,9 @@
+input [type=text] {
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+.AutoComplete {
+    display: flex;
+    flex-flow: column;
+}
