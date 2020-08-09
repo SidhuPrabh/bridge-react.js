@@ -1,3 +1,12 @@
+/*
+$jet: #353535ff;
+$ming: #3c6e71ff;
+$white: #ffffffff;
+$gainsboro: #d9d9d9ff;
+$indigo-dye: #284b63ff;
+
+*/
+
 .Search{
     display: flex;
     flex-flow: row;
@@ -10,19 +19,19 @@
     flex-flow: column;
     margin-top: 50px;
     padding: 0em;
-    width: 50%;
+    width: 500px;
 }
 .SearchContainer h1 {
     margin: 0px;
     font-family: 'Merriweather Sans', sans-serif;
-    color: #1c1c36;
+    color: #310a31ff;
 }
 
 .SearchContainer h3 {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
-    color: #3d3d4a;
+    color: #3c6e71ff;
 }
 
 .SearchContainer p {
@@ -32,6 +41,33 @@
 .AutoCompleteContainer {
     display: flex;
     flex-flow: row;
+}
+.Button{
+    width: 100px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 2px;
+    background-color: #d9d9d9ff;
+    border: 1px solid #d9d9d9ff;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+}
+
+.Button:active {
+    background-color: #d9d9d9ff;
+}
+
+.Button:focus {
+    outline-style: none;
+}
+
+.Button:hover {
+    background-color: #d9d9d9aa;
+    border: 1px solid #d9d9d9aa;
+    cursor: pointer;
 }
 
 

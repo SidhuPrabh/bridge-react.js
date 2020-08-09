@@ -84,7 +84,7 @@ export class AutoComplete extends Component {
     if (this.state.showSuggestions && this.state.userInput) {
       if (this.state.filteredSuggestions.length) {
         suggestionsListComponent = (
-          <ul className="suggestions">
+          <ul>
             {this.state.filteredSuggestions.map((suggestion, index) => {
               return (
                 <li  key={suggestion} onClick={onClick}>
@@ -96,7 +96,7 @@ export class AutoComplete extends Component {
         );
       } else {
         suggestionsListComponent = (
-          <div className="no-suggestions">
+          <div>
             <em>No suggestions!</em>
           </div>
         );
@@ -106,7 +106,7 @@ export class AutoComplete extends Component {
 
     return (
        <div className={classes.AutoComplete}>
-         <input
+         <input className={classes.Input}
            type="text"
            onChange={onChange}
            onKeyDownCapture={this.props.onKeyDownCapture}

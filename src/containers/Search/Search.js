@@ -68,7 +68,7 @@ class Search extends Component {
                             suggestions={this.state.allCities}
                             onKeyDownCapture={event => this.onKeyPressHandler(event)}
                         />
-                        <input type="button" value="Search"/>
+                        <input type="button" value="Search" className={classes.Button}/>
                     </div>
                 </div>
             </div>
