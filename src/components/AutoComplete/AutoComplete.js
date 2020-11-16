@@ -28,6 +28,7 @@ export class AutoComplete extends Component {
           showSuggestions: false,
           userInput: e.currentTarget.innerText
         });
+        this.props.valueSelected (e.currentTarget.innerText);
       };
 
     const onKeyDown = (e) => {
@@ -39,6 +40,7 @@ export class AutoComplete extends Component {
             showSuggestions: false,
             userInput: filteredSuggestions[activeSuggestion]
           });
+          this.props.valueSelected (filteredSuggestions[activeSuggestion]);
         }
         else if (e.keyCode === 38) {
           if (activeSuggestion === 0) {

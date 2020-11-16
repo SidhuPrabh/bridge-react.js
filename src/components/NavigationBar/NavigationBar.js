@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classes from './NavigationBar.css';
 import Logo from '../Logo/Logo';
+import { Link } from 'react-router-dom';
 
 class NavigationBar extends Component {
     
@@ -9,13 +10,16 @@ class NavigationBar extends Component {
             <div className={classes.NavigationBar}>
                 <ul>
                     <li className={classes.Logo}>
-                        <Logo/>
+                        <Link to="/"><Logo/></Link>
                     </li>
                     <li>
-                        Home
+                    <Link className={classes.Link} to="/">Home</Link>
                     </li>
                     <li>
-                        Search
+                    <Link className={classes.Link} to="/searchresult">Search Result</Link>
+                    </li>
+                    <li>
+                    <Link className={classes.Link} to="/registerPro">Pro register</Link>
                     </li>
                 </ul>
             </div>
