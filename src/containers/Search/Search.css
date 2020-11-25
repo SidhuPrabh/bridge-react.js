@@ -44,7 +44,9 @@ $indigo-dye: #284b63ff;
 }
 .Button{
     width: 100px;
-    height: 30px;
+    height: 32px;
+    margin: 0px;
+    padding: 0em;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #353535ff;

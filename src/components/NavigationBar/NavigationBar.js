@@ -16,9 +16,6 @@ class NavigationBar extends Component {
                     <Link className={classes.Link} to="/">Home</Link>
                     </li>
                     <li>
-                    <Link className={classes.Link} to="/searchresult">Search Result</Link>
-                    </li>
-                    <li>
                     <Link className={classes.Link} to="/registerPro">Pro register</Link>
                     </li>
                 </ul>

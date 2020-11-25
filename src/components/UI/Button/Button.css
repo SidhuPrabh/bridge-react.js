@@ -1,0 +1,10 @@
+.ButtonCard {
+    width: auto;
+    height: 25px;
+    border-radius: 3px;
+    border: none;
+    background-color: #3c6e71ff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+}

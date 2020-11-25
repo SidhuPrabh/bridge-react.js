@@ -84,7 +84,7 @@ class Search extends Component {
             <Redirect to={'/searchResult?cat='+this.state.catValueSelected+'&city='+this.state.cityValueSelected}/>
         );
 
-        if(this.state.searchButtonClicked) {
+        if(this.state.searchButtonClicked && this.state.content) {
             compo = (<div>
                 <Redirect to={'/searchResult/'+this.state.catValueSelected+'/'+this.state.cityValueSelected}/>
                 </div>)
